@@ -7,7 +7,16 @@ const chefsJson = require('./data/chefs.json')
 app.use(cors());
 
 // Define a simple route
-
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+app.get('/chefs', (req, res) => {
+    res.send(chefsJson);
+});
+app.get('/greet/:name', (req, res) => {
+    const { name } = req.params;
+    res.send(`Hello, ${name}!`);
+});
 // Start the server on port 3000
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
