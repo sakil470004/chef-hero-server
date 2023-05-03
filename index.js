@@ -19,7 +19,8 @@ app.get('/greet/:name', (req, res) => {
 });
 app.get('/chef/:id', (req, res) => {
     const { id } = req.params;
-   
+    const numberId = parseInt(id)
+    const chef = chefsJson.find(chef => chef.id === numberId)
     res.send(chef)
 });
 // Start the server on port 3000
