@@ -137,7 +137,8 @@
                     "eggs",
                     "milk",
                     "sugar",
-                    "vanilla extract"
+                    "vanilla extract",
+                    "beef"
                 ],
                 "cookingMethod": "Mix eggs, milk, sugar, and vanilla extract in bowl, pour into ramekins, and bake in water bath until set",
                 "rating": 4.8
@@ -260,7 +261,8 @@
                     "steak",
                     "salt",
                     "pepper",
-                    "olive oil"
+                    "olive oil",
+                    "avocado"
                 ],
                 "cookingMethod": "Season steak with salt and pepper, grill until desired doneness",
                 "rating": 4.9
