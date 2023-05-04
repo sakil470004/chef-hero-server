@@ -8,15 +8,12 @@ app.use(cors());
 
 // Define a simple route
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello From Chef Hero server!');
 });
 app.get('/chefs', (req, res) => {
     res.send(chefsJson);
 });
-app.get('/greet/:name', (req, res) => {
-    const { name } = req.params;
-    res.send(`Hello, ${name}!`);
-});
+
 app.get('/chef/:id', (req, res) => {
     const { id } = req.params;
     const numberId = parseInt(id)
